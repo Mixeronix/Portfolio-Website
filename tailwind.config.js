@@ -3,19 +3,11 @@ module.exports = {
 	content: ["./pages/**/*.{js,ts,jsx,tsx,mdx}", "./components/**/*.{js,ts,jsx,tsx,mdx}", "./app/**/*.{js,ts,jsx,tsx,mdx}"],
 	theme: {
 		extend: {
-			colors: {
-				Black: "#37395F",
-				Gray: "#697591",
-				White: "#FFFFFF",
-				Green: "#BCF7D7",
-				Yellow: "#FFD67F",
-				Blue: "#D3EDF3",
-				Purple: "#CBD7FB",
-				Pink: "#FFD6D6",
+			backgroundImage: {
+				"gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+				"gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
 			},
-			fontSize: {
-				"14xl": "13rem",
-			},
+			colors: { background: "#EEEDE8", gray: "#222222" },
 		},
 	},
 	plugins: [],
