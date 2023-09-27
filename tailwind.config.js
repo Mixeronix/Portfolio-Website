@@ -4,9 +4,14 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				Black: "#444545",
+				Black: "#37395F",
+				Gray: "#697591",
 				White: "#FFFFFF",
-				Main: "#E6B786",
+				Green: "#BCF7D7",
+				Yellow: "#FFD67F",
+				Blue: "#D3EDF3",
+				Purple: "#CBD7FB",
+				Pink: "#FFD6D6",
 			},
 			fontSize: {
 				"14xl": "13rem",
