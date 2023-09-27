@@ -1,20 +1,41 @@
-import localFont from "next/font/local";
+import { Inter, Kanit, Lato, Open_Sans } from "next/font/google";
+import Image from "next/image";
 
-const valenciaFont = localFont({ src: "./Valencia.ttf" });
-import { Open_Sans } from "next/font/google";
+const latoFont700 = Lato({
+	weight: "700",
+	subsets: ["latin"],
+});
 
-const openSansFont = Open_Sans({
-	weight: "600",
+const interFont500 = Inter({
+	weight: "500",
 	subsets: ["latin"],
 });
 
 export default function Home() {
 	return (
-		<main className="w-screen h-screen bg-background">
-			<div className="flex flex-col absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-2/3 w-full text-gray ">
-				<h1 className={"text-7xl sm:text-8xl md:text-9xl text-center lg:text-14xl " + valenciaFont.className}>Bartosz Wiaderek</h1>
-				<h2 className={"text-1xl sm:text-2xl md:text-3xl text-center mt-6 uppercase " + openSansFont.className}>Website available later...</h2>
+		<main className="bg-White flex flex-col gap-y-10 ">
+			<div className="flex px-32 pt-40 pb-96 gap-x-12 justify-center w-screen relative overflow-clip">
+				<div className="z-10 flex flex-col justify-center gap-y-3">
+					<h1 className={`text-Red text-6xl text-Black ${latoFont700.className}`}>
+						Jestem Bartosz <br />
+						Wiaderek
+					</h1>
+					<h3 className={`text-2xl text-black ${interFont500.className}`}>Razem uczynimy Traugutta lepszym!</h3>
+
+					<p className="text-lg">
+						Cześć, nazywam się Bartosz Wiaderek,
+						<br /> jestem w klasie 2C i kandyduje na przewodniczącego Traugutta.
+					</p>
+				</div>
+
+				<div className="z-10">
+					<div className="aspect-[9/16] bg-gray-600 w-80"></div>
+				</div>
+
+				<Image src="/blob.svg" alt="" className="object-cover blob absolute w-full h-full  left-0 right-0 bottom-0" width={200} height={200} />
 			</div>
+
+			<div className="bg-White w-full flex flex-col items-center py-20"></div>
 		</main>
 	);
 }
