@@ -4,9 +4,9 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				Black: "#291F1E",
+				Black: "#444545",
 				White: "#FFFFFF",
-				Green: "#5EEB5B",
+				Main: "#E6B786",
 			},
 			fontSize: {
 				"14xl": "13rem",
